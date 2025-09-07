@@ -84,6 +84,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 50px;
+
 }
 
 .header_navs{
@@ -107,7 +108,7 @@ header{
 }
 
 .switch_mode{
-    margin: 20px;
+    margin: 40px 10px;
     box-shadow: 0px 5px 5px 0px rgba(119, 119, 119, 0.16);
     border: 2px solid rgba(184, 183, 183, 0.159);
     width: 40px;
@@ -148,7 +149,7 @@ header{
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #50c80b;
+    background-color: #59db0ddb;
     position: absolute;
     bottom: 15px;
     left: 77px;
@@ -240,6 +241,7 @@ header{
     transform: scale(1.03);
     box-shadow: 0px 5px 5px 0px rgba(119, 119, 119, 0.16);
     cursor: pointer;
+    border: 1px solid #399cdeeb;
 }
 .project img{
     border-radius: 5px 5px 0px 0px;
@@ -262,8 +264,7 @@ header{
 .proj_icons a i:hover{
     color: var(--main-text--);
 }
-
-.contact{
+#contact{
     margin: 30px 50px;
 }
 
@@ -287,4 +288,9 @@ header{
     font-size: 14px;
     background-color: transparent;
     color: var(--main-text--);
+    transition: .32s ease-in;
+}
+
+.contact_form input:focus, textarea:focus{
+    border: 1px solid #399cdeeb;
 }
