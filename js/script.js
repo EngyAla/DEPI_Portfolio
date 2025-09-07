@@ -140,7 +140,7 @@
     .map((e) => {
         return `<div class="project">
                         <div class="proj_img">
-                            <img src=${e.img_src} alt="" width="297" height="200">
+                            <img src=${e.img_src} alt="" width="100%" height="200">
                         </div>
                         <div class="proj_text">
                             <h2 class="proj_title">${e.title}</h2>
@@ -181,3 +181,14 @@
         .join("");
     });
     });
+
+
+    // let up_arrow = document.querySelector(".up_arrow")
+    // window.addEventListener("scroll", ()=>{
+    //     if(window.scrollY > 70){
+    //         up_arrow.style.display = "flex"
+    //         up_arrow.style.transition = ".32s"
+    //     } else{
+    //         up_arrow.style.display = "none"
+    //     }
+    // })
