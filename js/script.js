@@ -29,6 +29,8 @@
     "Responsive Web Design",
     "Git & GitHub",
     "UI/UX",
+    "jQuery",
+    "TypeScript"
     ];
     let skills = document.querySelector(".skill_button");
     skills.innerHTML = skillsArr
@@ -58,8 +60,8 @@
         description:
         "A simple and interactive task management app that allows users to add, edit, and delete tasks, helping to organize daily activities efficiently.",
         img_src: "img/time-budgeting-for-remote-workers-1024x585.webp",
-        repo: "https://github.com/EngyAla/Mercedes",
-        githup: "https://engyala.github.io/Mercedes/",
+        repo: "https://github.com/EngyAla/updated-to-do-list",
+        githup: "https://engyala.github.io/updated-to-do-list/",
     },
     {
         id: "js",
@@ -67,8 +69,8 @@
         description:
         "A web application that provides live weather updates by fetching data from a weather API, with a clean interface displaying temperature, conditions.",
         img_src: "img/spire-high-resolution-forecast-data.jpg",
-        repo: "https://github.com/EngyAla/Mercedes",
-        githup: "https://engyala.github.io/Mercedes/",
+        repo: "https://github.com/EngyAla/weather-app",
+        githup: "https://engyala.github.io/weather-app/",
     },
     {
         id: "js",
@@ -76,8 +78,8 @@
         description:
         "An online furniture store built with React.js featuring product categories, shopping cart, favorites, and a smooth checkout experience.",
         img_src: "img/e-commerce-banner.jpg",
-        repo: "https://github.com/EngyAla/Mercedes",
-        githup: "https://engyala.github.io/Mercedes/",
+        repo: "https://github.com/EngyAla/furniture-app",
+        githup: "https://engyala.github.io/furniture-app/",
     },
     {
         id: "js",
@@ -85,8 +87,8 @@
         description:
         "A web app demonstrating Create, Read, Update, and Delete operations, allowing efficient data handling with a user-friendly interface.",
         img_src: "img/CRUD_Operations_Banner.png",
-        repo: "https://github.com/EngyAla/Mercedes",
-        githup: "https://engyala.github.io/Mercedes/",
+        repo: "",
+        githup: "",
     },
     {
         id: "react",
@@ -94,8 +96,8 @@
         description:
         "E-Commerce Shopping App Description: A full-featured e-commerce application built with React.js, including product listing, categories, shopping cart, favorites, and a smooth checkout flow with responsive design.",
         img_src: "img/download.webp",
-        repo: "https://github.com/EngyAla/Mercedes",
-        githup: "https://engyala.github.io/Mercedes/",
+        repo: "https://github.com/EngyAla/E-commerce-React",
+        githup: "https://engyala.github.io/E-commerce-React/",
     },
     {
         id: "react",
@@ -103,8 +105,8 @@
         description:
         "A React-based Islamic website that provides Quran display, daily Azkar, prayer times, and Hijri calendar using APIs, with a simple and user-friendly design.",
         img_src: "img/70f03a124399429.6102f34d699ee.png",
-        repo: "https://github.com/EngyAla/Mercedes",
-        githup: "https://engyala.github.io/Mercedes/",
+        repo: "https://bayyinah-3be07.web.app/",
+        githup: "https://bayyinah-3be07.web.app/",
     },
     {
         id: "react",
@@ -112,8 +114,8 @@
         description:
         "A dynamic dashboard built with React.js featuring data visualization, charts, and CRUD operations, enabling easy management and real-time insights.",
         img_src: "img/600x0_Influencer-Dashboard.png",
-        repo: "https://github.com/EngyAla/Mercedes",
-        githup: "https://engyala.github.io/Mercedes/",
+        repo: "https://admin-dashboard-79f47.web.app/",
+        githup: "https://admin-dashboard-79f47.web.app/",
     },
     {
         id: "react",
@@ -122,8 +124,8 @@
         "A React quiz application that allows users to answer multiple-choice questions, view scores instantly, and track progress with a clean and engaging interface.",
         img_src:
         "img/20963-01-quiz-maker-slides-toolkit-powerpoint-template-3-870x489.webp",
-        repo: "https://github.com/EngyAla/Mercedes",
-        githup: "https://engyala.github.io/Mercedes/",
+        repo: "https://quiz-app-9e847.web.app/",
+        githup: "https://quiz-app-9e847.web.app/",
     },
     {
         id: "react",
@@ -131,8 +133,8 @@
         description:
         "A weather application built with React.js that fetches live data from weather APIs, showing temperature, conditions, and city details in an attractive UI.",
         img_src: "img/original-31b9575e298e495ca6cf2e4d7cd75b9c.webp",
-        repo: "https://github.com/EngyAla/Mercedes",
-        githup: "https://engyala.github.io/Mercedes/",
+        repo: "https://github.com/EngyAla/react-weather-app",
+        githup: "https://engyala.github.io/react-weather-app/",
     },
     ];
 
@@ -140,7 +142,7 @@
     .map((e) => {
         return `<div class="project">
                         <div class="proj_img">
-                            <img src=${e.img_src} alt="" width="100%" height="200">
+                            <img src=${e.img_src} class="img-fluid" alt="" width="100%" height="200">
                         </div>
                         <div class="proj_text">
                             <h2 class="proj_title">${e.title}</h2>
@@ -164,7 +166,7 @@
             id == "" || id === e.id
                 ? `<div class="project">
                         <div class="proj_img">
-                            <img src=${e.img_src} alt="" width="297" height="200">
+                            <img src=${e.img_src} class="img-fluid" alt="" width="297" height="200">
                         </div>
                         <div class="proj_text">
                             <h2 class="proj_title">${e.title}</h2>

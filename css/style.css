@@ -42,6 +42,18 @@ h4{
 h2{
     font-size: 24px;
 }
+.work_links{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.work_links a i{
+    font-size: 20px;
+}
+.work_links a span{
+    font-size: 20px;
+    font-weight: 800;
+}
 .divider{
     background-color: var(--secondary-container--);
     width: 90%;
@@ -104,7 +116,6 @@ a{
     align-items: center;
     border-radius: 50px;
     width: 55%;
-
 }
 
 .header_navs{
@@ -321,20 +332,18 @@ a{
 .contact_form input:focus, textarea:focus{
     border: 1px solid #399cdeeb;
 }
-/* #check_menu{
-    display: none;
+
+@media screen and (max-width: 920px){
+    .head_container{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
 }
-@media screen and (max-width: 620px){
-    .menu_icon{
-        color: #f2f2f2;
-        position: absolute;
-        cursor: pointer;
-    }
-    .header_navs{
-        display: flex;
-        flex-direction: column;
-        background-color: var(--parent-color--);
-        position: relative;
-        height: fit-content;
-    }
-} */
+.header{
+    border-radius: 0px;
+    width: 100%;
+}
+}
